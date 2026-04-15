@@ -1,18 +1,16 @@
 //Maya ASCII 2025ff03 scene
 //Name: mycupfilled.ma
-//Last modified: Wed, Apr 01, 2026 03:05:43 PM
-//Codeset: 1252
-requires maya "2025ff03";
-requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" -nodeType "aiImagerDenoiserOidn"
-		 "mtoa" "5.4.5";
+//Last modified: Tue, Apr 07, 2026 03:29:57 PM
+//Codeset: UTF-8
+requires maya "2026";
+requires "mtoa" "5.5.4.2";
 currentUnit -l centimeter -a degree -t film;
 fileInfo "application" "maya";
-fileInfo "product" "Maya 2025";
-fileInfo "version" "2025";
-fileInfo "cutIdentifier" "202409190603-cbdc5a7e54";
-fileInfo "osv" "Windows 11 Enterprise v2009 (Build: 26200)";
-fileInfo "UUID" "673A1E07-479D-2CF2-DDBA-DA83D83ECF7B";
-fileInfo "license" "education";
+fileInfo "product" "Maya 2026";
+fileInfo "version" "2026";
+fileInfo "cutIdentifier" "202510291147-60ec9eda33";
+fileInfo "osv" "Mac OS X 15.6.1";
+fileInfo "UUID" "A53923E6-0843-62F6-17E1-EA839A9BCF24";
 createNode transform -n "mainmug";
 	rename -uid "4BD37778-0F40-C4AF-B3BC-0FA40D333C12";
 	setAttr ".rp" -type "double3" -0.12664802450064183 0 0 ;
@@ -3789,7 +3787,6 @@ createNode materialInfo -n "materialInfo1";
 createNode shadingEngine -n "lambert2SG";
 	rename -uid "D40009EA-7940-E92C-730C-D39CC0786FF8";
 	setAttr ".ihi" 0;
-	setAttr -s 6 ".dsm";
 	setAttr ".ro" yes;
 createNode lambert -n "lambert2";
 	rename -uid "6686802D-5540-1CA3-0FEA-E0AD70B5BF97";
@@ -3800,6 +3797,7 @@ createNode file -n "currentcafecolors_1";
 createNode place2dTexture -n "place2dTexture1";
 	rename -uid "78F4B48F-1249-A71D-61AB-73BD8F6DE8CB";
 createNode lightLinker -s -n "lightLinker1";
+<<<<<<< HEAD
 	rename -uid "D78E8B0C-453E-97A4-AFD2-86AE46C472A9";
 	setAttr -s 3 ".lnk";
 	setAttr -s 3 ".slnk";
@@ -3809,11 +3807,26 @@ createNode poseInterpolatorManager -n "poseInterpolatorManager";
 	rename -uid "EAB3DF5D-441C-5ED4-3D8D-6FBE0B52F3AD";
 createNode displayLayerManager -n "layerManager";
 	rename -uid "F42C2AF2-4205-EDE1-EED1-DA99A9E191F5";
+=======
+	rename -uid "08B4EF1D-494F-122D-65E2-E9A1E29FE63F";
+	setAttr -s 4 ".lnk";
+	setAttr -s 4 ".slnk";
+createNode shapeEditorManager -n "shapeEditorManager";
+	rename -uid "46641320-CA43-E000-C80F-A9884C5730C0";
+createNode poseInterpolatorManager -n "poseInterpolatorManager";
+	rename -uid "66FE88BA-6B47-CC04-5B5A-AD8175101632";
+createNode displayLayerManager -n "layerManager";
+	rename -uid "ADA61FCE-B941-D8C9-846A-90BF65A9BEE5";
+>>>>>>> 5f3a877b7b2344e6b86bbf0426a5fd44cd407843
 createNode displayLayer -n "defaultLayer";
 	rename -uid "C6880042-5F40-EEE1-C0FA-44B5735DD4FF";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
+<<<<<<< HEAD
 	rename -uid "2BBF6737-4E5B-A911-AA08-26A4CD135977";
+=======
+	rename -uid "F19759F8-0549-E9C9-E5EC-69AD049B2F04";
+>>>>>>> 5f3a877b7b2344e6b86bbf0426a5fd44cd407843
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "52F47D20-294C-6189-476F-DE8D60E1E32B";
 	setAttr ".g" yes;
@@ -3865,6 +3878,7 @@ createNode script -n "sceneConfigurationScriptNode";
 	rename -uid "CB273EB8-0D46-1E04-CA75-5AB30A2957C0";
 	setAttr ".b" -type "string" "playbackOptions -min 1 -max 120 -ast 1 -aet 200 ";
 	setAttr ".st" 6;
+<<<<<<< HEAD
 createNode aiOptions -s -n "defaultArnoldRenderOptions";
 	rename -uid "810852FD-4B74-4CB5-39B2-2BA3ACF59F53";
 	setAttr ".version" -type "string" "5.4.5";
@@ -3880,6 +3894,41 @@ createNode aiAOVDriver -s -n "defaultArnoldDisplayDriver";
 	setAttr ".output_mode" 0;
 createNode aiImagerDenoiserOidn -s -n "defaultArnoldDenoiser";
 	rename -uid "F12E5182-4403-97CB-A917-4E96F2D7AEAA";
+=======
+createNode lambert -n "lambert3";
+	rename -uid "6BD83D0D-194F-4861-564E-A09C52912140";
+createNode shadingEngine -n "lambert3SG";
+	rename -uid "A9A212C7-8041-D99C-74D1-B7BA9F21C2E5";
+	setAttr ".ihi" 0;
+	setAttr -s 6 ".dsm";
+	setAttr ".ro" yes;
+createNode materialInfo -n "materialInfo2";
+	rename -uid "185C41D0-A747-A046-78D2-97A4BC9D1373";
+createNode file -n "currentcafecolors_2";
+	rename -uid "F8BAB09D-4446-9A4F-ED44-18981DF90D9A";
+	setAttr ".ftn" -type "string" "/Users/sherryberrett/Projects/Essentials/DAGV1100and1200/Maya//sourceimages/currentcafecolors.png";
+	setAttr ".cs" -type "string" "sRGB Encoded Rec.709 (sRGB)";
+createNode place2dTexture -n "place2dTexture2";
+	rename -uid "E37E39E9-4243-E5F3-0F0A-6D9637DD1341";
+createNode nodeGraphEditorInfo -n "hyperShadePrimaryNodeEditorSavedTabsInfo";
+	rename -uid "00BFAA71-4D40-B094-1D13-C9B1C8C3438D";
+	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
+	setAttr ".tgi[0].vl" -type "double2" 139.29798657909407 -1069.9013385355704 ;
+	setAttr ".tgi[0].vh" -type "double2" 1434.6700367883097 251.61583562282212 ;
+	setAttr -s 4 ".tgi[0].ni";
+	setAttr ".tgi[0].ni[0].x" 253.38580322265625;
+	setAttr ".tgi[0].ni[0].y" -211.86590576171875;
+	setAttr ".tgi[0].ni[0].nvs" 1923;
+	setAttr ".tgi[0].ni[1].x" 474.81436157226562;
+	setAttr ".tgi[0].ni[1].y" -211.86590576171875;
+	setAttr ".tgi[0].ni[1].nvs" 1923;
+	setAttr ".tgi[0].ni[2].x" 987.14288330078125;
+	setAttr ".tgi[0].ni[2].y" -442.85714721679688;
+	setAttr ".tgi[0].ni[2].nvs" 1923;
+	setAttr ".tgi[0].ni[3].x" 680;
+	setAttr ".tgi[0].ni[3].y" -442.85714721679688;
+	setAttr ".tgi[0].ni[3].nvs" 1923;
+>>>>>>> 5f3a877b7b2344e6b86bbf0426a5fd44cd407843
 select -ne :time1;
 	setAttr ".o" 1;
 	setAttr ".unw" 1;
@@ -3891,15 +3940,21 @@ select -ne :hardwareRenderingGlobals;
 	setAttr ".fprt" yes;
 	setAttr ".rtfm" 1;
 select -ne :renderPartition;
-	setAttr -s 3 ".st";
+	setAttr -s 4 ".st";
 select -ne :renderGlobalsList1;
 select -ne :defaultShaderList1;
+<<<<<<< HEAD
 	setAttr -s 6 ".s";
+=======
+	setAttr -s 8 ".s";
+>>>>>>> 5f3a877b7b2344e6b86bbf0426a5fd44cd407843
 select -ne :postProcessList1;
 	setAttr -s 2 ".p";
 select -ne :defaultRenderUtilityList1;
+	setAttr -s 2 ".u";
 select -ne :defaultRenderingList1;
 select -ne :defaultTextureList1;
+	setAttr -s 2 ".tx";
 select -ne :standardSurface1;
 	setAttr ".bc" -type "float3" 0.40000001 0.40000001 0.40000001 ;
 	setAttr ".sr" 0.5;
@@ -3929,12 +3984,6 @@ connectAttr "lambert2SG.msg" "materialInfo1.sg";
 connectAttr "lambert2.msg" "materialInfo1.m";
 connectAttr "currentcafecolors_1.msg" "materialInfo1.t" -na;
 connectAttr "lambert2.oc" "lambert2SG.ss";
-connectAttr "handlesideShape.iog" "lambert2SG.dsm" -na;
-connectAttr "mainmugShape.iog" "lambert2SG.dsm" -na;
-connectAttr "handletopcornerShape.iog" "lambert2SG.dsm" -na;
-connectAttr "handlebottomShape.iog" "lambert2SG.dsm" -na;
-connectAttr "handlebottomcornerShape.iog" "lambert2SG.dsm" -na;
-connectAttr "handlebottom1Shape.iog" "lambert2SG.dsm" -na;
 connectAttr "currentcafecolors_1.oc" "lambert2.c";
 connectAttr ":defaultColorMgtGlobals.cme" "currentcafecolors_1.cme";
 connectAttr ":defaultColorMgtGlobals.cfe" "currentcafecolors_1.cmcf";
@@ -3961,20 +4010,70 @@ connectAttr "place2dTexture1.ofs" "currentcafecolors_1.fs";
 relationship "link" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" "lambert2SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "lambert3SG.message" ":defaultLightSet.message";
 relationship "shadowLink" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
 relationship "shadowLink" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
 relationship "shadowLink" ":lightLinker1" "lambert2SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "lambert3SG.message" ":defaultLightSet.message";
 connectAttr "layerManager.dli[0]" "defaultLayer.id";
 connectAttr "renderLayerManager.rlmi[0]" "defaultRenderLayer.rlid";
+<<<<<<< HEAD
 connectAttr ":defaultArnoldDenoiser.msg" ":defaultArnoldRenderOptions.imagers" -na
 		;
 connectAttr ":defaultArnoldDisplayDriver.msg" ":defaultArnoldRenderOptions.drivers"
 		 -na;
 connectAttr ":defaultArnoldFilter.msg" ":defaultArnoldRenderOptions.filt";
 connectAttr ":defaultArnoldDriver.msg" ":defaultArnoldRenderOptions.drvr";
+=======
+connectAttr "currentcafecolors_2.oc" "lambert3.c";
+connectAttr "lambert3.oc" "lambert3SG.ss";
+connectAttr "handlebottomShape.iog" "lambert3SG.dsm" -na;
+connectAttr "handlebottomcornerShape.iog" "lambert3SG.dsm" -na;
+connectAttr "handletopcornerShape.iog" "lambert3SG.dsm" -na;
+connectAttr "handlesideShape.iog" "lambert3SG.dsm" -na;
+connectAttr "handlebottom1Shape.iog" "lambert3SG.dsm" -na;
+connectAttr "mainmugShape.iog" "lambert3SG.dsm" -na;
+connectAttr "lambert3SG.msg" "materialInfo2.sg";
+connectAttr "lambert3.msg" "materialInfo2.m";
+connectAttr "currentcafecolors_2.msg" "materialInfo2.t" -na;
+connectAttr ":defaultColorMgtGlobals.cme" "currentcafecolors_2.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "currentcafecolors_2.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "currentcafecolors_2.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "currentcafecolors_2.ws";
+connectAttr "place2dTexture2.c" "currentcafecolors_2.c";
+connectAttr "place2dTexture2.tf" "currentcafecolors_2.tf";
+connectAttr "place2dTexture2.rf" "currentcafecolors_2.rf";
+connectAttr "place2dTexture2.mu" "currentcafecolors_2.mu";
+connectAttr "place2dTexture2.mv" "currentcafecolors_2.mv";
+connectAttr "place2dTexture2.s" "currentcafecolors_2.s";
+connectAttr "place2dTexture2.wu" "currentcafecolors_2.wu";
+connectAttr "place2dTexture2.wv" "currentcafecolors_2.wv";
+connectAttr "place2dTexture2.re" "currentcafecolors_2.re";
+connectAttr "place2dTexture2.of" "currentcafecolors_2.of";
+connectAttr "place2dTexture2.r" "currentcafecolors_2.ro";
+connectAttr "place2dTexture2.n" "currentcafecolors_2.n";
+connectAttr "place2dTexture2.vt1" "currentcafecolors_2.vt1";
+connectAttr "place2dTexture2.vt2" "currentcafecolors_2.vt2";
+connectAttr "place2dTexture2.vt3" "currentcafecolors_2.vt3";
+connectAttr "place2dTexture2.vc1" "currentcafecolors_2.vc1";
+connectAttr "place2dTexture2.o" "currentcafecolors_2.uv";
+connectAttr "place2dTexture2.ofs" "currentcafecolors_2.fs";
+connectAttr "place2dTexture2.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[0].dn"
+		;
+connectAttr "currentcafecolors_2.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[1].dn"
+		;
+connectAttr "lambert3SG.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[2].dn"
+		;
+connectAttr "lambert3.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[3].dn"
+		;
+>>>>>>> 5f3a877b7b2344e6b86bbf0426a5fd44cd407843
 connectAttr "lambert2SG.pa" ":renderPartition.st" -na;
+connectAttr "lambert3SG.pa" ":renderPartition.st" -na;
 connectAttr "lambert2.msg" ":defaultShaderList1.s" -na;
+connectAttr "lambert3.msg" ":defaultShaderList1.s" -na;
 connectAttr "place2dTexture1.msg" ":defaultRenderUtilityList1.u" -na;
+connectAttr "place2dTexture2.msg" ":defaultRenderUtilityList1.u" -na;
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
 connectAttr "currentcafecolors_1.msg" ":defaultTextureList1.tx" -na;
+connectAttr "currentcafecolors_2.msg" ":defaultTextureList1.tx" -na;
 // End of mycupfilled.ma
